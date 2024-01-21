@@ -1,7 +1,7 @@
 //your JS code here. If required.
-const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+const bandss = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
 
-const bandNode = document.getElementById("band");
+const bandNode = document.getElementById("bands");
 
 function sortBands() {
 	const igWords = ["a","an","the"];
@@ -16,8 +16,8 @@ function sortBands() {
 	return band1[0].localeCompare(band2[0]);
 	}
 
-	bands.sort(customSort);
-	bands.forEach( band => {
+	bandss.sort(customSort);
+	bandss.forEach( band => {
 		let listItem = document.createElement("li");
 		listItem.textContent = band;
 		bandNode.appendChild(listItem);
